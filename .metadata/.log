@@ -4119,3 +4119,6 @@ java.lang.Exception: Project 'day01' is not open.
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2316)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:86)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-11-18 02:20:46.506
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
