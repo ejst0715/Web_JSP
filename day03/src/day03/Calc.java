@@ -8,6 +8,7 @@ public class Calc {
 		return res;
 	}
 
+	
 	// 생성자를 정의
 	// 기본생성자 형태가 아닌 형태를 사용하고싶음!
 	public Calc(int num1, int num2, String op) {
