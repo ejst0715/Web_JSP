@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jdt.core
+504376574.index
+4028517842.index
+2725851355.index
+1763122280.index
