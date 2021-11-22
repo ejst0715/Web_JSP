@@ -5,8 +5,10 @@ public class CalcBean {
 	private int num2;
 	private String op;
 	private int res;
+	public CalcBean() {
+		op="+";
+	}
 	
-
 	public int getNum1() {
 		return num1;
 	}

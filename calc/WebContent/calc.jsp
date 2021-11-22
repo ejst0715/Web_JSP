@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:useBean id="calc" class="calc.CalcBean"/>
-<jsp:setProperty property="*" name="calc"/>
+<jsp:useBean id="cb" class="calc.CalcBean"/>
+<jsp:setProperty property="*" name="cb"/>
 
 <% 
-	calc.work();
+	cb.work();
 %>
 <!DOCTYPE html>
 <html>
@@ -20,6 +20,6 @@
 			value="계산하기">
 	</form>
 		<hr>
-		<%=calc.getRes()%>
+		<%=cb.getRes()%>
 </body>
 </html>
