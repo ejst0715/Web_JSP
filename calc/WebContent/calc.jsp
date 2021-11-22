@@ -20,6 +20,8 @@
 			value="계산하기">
 	</form>
 		<hr>
+		
 		<%=cb.getRes()%>
+		
 </body>
 </html>
