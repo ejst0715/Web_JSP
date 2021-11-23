@@ -1,0 +1,31 @@
+http://www.koreastudyroom.com/login_stu.asp
+
+
+www.kedudisk.com
+아이디 it1000
+비번 학생11!
+
+
+----포트충돌시!!!!-----
+1.cmd
+2.netstat -ano
+3.pid 확인
+4.작업관리자에서 해당 pid 제거
+--------------------
+1.cmd관리자권한 실행
+2.netstat -ano
+3.pid 확인
+4.taskkill -f -pid pid번호(강제제거)
+
+
+----------------------------------------------------
+DB 계정만들기
+sqlplus sys/oralce as sysdba
+create user bang
+identified by 1234
+account unlock;
+grant connect, resource to bang;
+
+----------------------------------------------------
+ojdbc6.jar
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=turtle0720&logNo=60208826288
