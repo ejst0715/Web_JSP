@@ -29,3 +29,9 @@ grant connect, resource to bang;
 ----------------------------------------------------
 ojdbc6.jar
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=turtle0720&logNo=60208826288
+
+----------------------------------------------------
+Jsoup
+https://jsoup.org/download
+
+
