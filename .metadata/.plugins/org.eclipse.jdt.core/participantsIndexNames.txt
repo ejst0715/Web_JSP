@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1349696522.index
+\day08\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3108204308.index
 \day06\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3470638564.index
