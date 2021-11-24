@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jdt.core
 504376574.index
-3707733482.index
 1763122280.index
 2311255414.index
 1642527143.index
@@ -10,6 +9,5 @@ INDEX VERSION 1.131+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jdt.cor
 1619307501.index
 879168758.index
 427682023.index
-2942915242.index
 2155133277.index
 1853544561.index
