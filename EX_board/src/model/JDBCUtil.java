@@ -6,21 +6,23 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class JDBCUtil {
+	static String driver = "oracle.jdbc.driver.OracleDriver";
+	static String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	static String user = "bang";
+	static String password = "1234";
+	
 	public static Connection connect() {
-		String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "bang";
-		String password = "1234";
+
+		Connection conn = null;
 
 		try {
 			Class.forName(driver);
-			Connection conn = DriverManager.getConnection(url, user, password);
-			return conn;
+			conn = DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return null;
+		return conn;
 	}
 
 	public static void disconnect(PreparedStatement pstmt, Connection conn) {
