@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="java.util.ArrayList, model.BoardVO"
-	errorPage="error.jsp"%>
+	errorPage="error/error.jsp"%>
 <%
 	request.setCharacterEncoding("UTF-8");
 %>
@@ -41,7 +41,7 @@
 		}
 		throw new Exception("delete 수행중에 오류발생!");
 	} else if (action.equals("update")) {
-		if (dao.update(vo)) {
+		if (dao.update(vo)) { 
 			response.sendRedirect("controller.jsp?action=main");
 		}
 		throw new Exception("update수행중에 오류발생!");
