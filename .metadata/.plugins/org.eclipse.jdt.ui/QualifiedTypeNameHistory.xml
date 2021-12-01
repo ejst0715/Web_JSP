@@ -18,4 +18,6 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="model.BoardVO"/>
     <fullyQualifiedTypeName name="model.JDBCUtil"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 </qualifiedTypeNameHistroy>

@@ -13,6 +13,8 @@ C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\8243
 \EX_board\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1222937795.index
 \day10\src
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4235641217.index
+\day13\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3453716123.index
 \day01\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1433989515.index
