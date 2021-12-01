@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +12,9 @@
 <jsp:useBean id="nl" class="day12.Selection" scope="session"/>
 <form action="showResult.jsp" method="post">
 	<select name="cname">
-		<%
-			for(String v : nl.getNamelist()){
-				out.println("<option>" + v + "</option>");
-			}
-		%>
+	<c:forEach var="v" items="${nl.namelist}">
+		<option>${v}</option>
+	</c:forEach>
 	</select>
 	<input type="submit" value="선택완료">
 </form>
