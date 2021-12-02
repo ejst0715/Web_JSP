@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="calc.CalcBean"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="day06.MemberBean"/>
     <fullyQualifiedTypeName name="java.beans.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -20,4 +19,12 @@
     <fullyQualifiedTypeName name="model.JDBCUtil"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
+    <fullyQualifiedTypeName name="day12.Selection"/>
+    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.JspFragment"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="day13.Member"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="javax.servlet.annotation.WebListener"/>
+    <fullyQualifiedTypeName name="model.common.JDBCUtil"/>
 </qualifiedTypeNameHistroy>
