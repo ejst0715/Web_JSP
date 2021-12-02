@@ -5,7 +5,6 @@ INDEX VERSION 1.4+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.
 1879846185.index
 896409237.index
 2155133277.index
-1015953446.index
 198534541.index
 3289293923.index
 3570825734.index
