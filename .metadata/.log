@@ -7617,3 +7617,23 @@ java.lang.NoClassDefFoundError: javax/annotation/PostConstruct
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-06 23:30:27.432
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-06 23:30:27.433
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2ec9bd88 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@4337cf96, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
