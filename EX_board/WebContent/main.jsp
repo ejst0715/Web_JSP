@@ -26,7 +26,7 @@
    </tr>
    <%
       for(BoardVO v:(ArrayList<BoardVO>)datas){
-   %> c    
+   %>   
    <tr>
       <td><a href="controller.jsp?action=board&bid=<%=v.getBid()%>"><%=v.getBid()%></a></td><td><%=v.getTitle()%></td><td><%=v.getWriter()%></td>
    </tr>
