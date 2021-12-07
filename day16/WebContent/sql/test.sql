@@ -23,7 +23,9 @@ create table reply(
 	constraint board_fk foreign key(bid) references board(bid) on delete cascade
 );
 
-
+insert into BOARD values(1,'아이디1','메세지1',0);
+insert into BOARD values(2,'아이디2','메세지2',0);
+insert into BOARD values(3,'아이디3','메세지3',0);
 
 select * from board;
 select * from member;

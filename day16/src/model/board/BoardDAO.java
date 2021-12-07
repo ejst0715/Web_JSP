@@ -13,16 +13,22 @@ public class BoardDAO {
 	PreparedStatement pstmt;
 	ResultSet rs;
 	
-	String sql_insert="";
-	String sql_selectOne="";
-	String sql_selectAll="select * from board order by bid desc limit 0,?"; // "더보기": pagination(페이지네이션)
+	String sql_insert=""; // 로그인에 성공한 경우에만 C 진행
+	String sql_update="update board set favcnt=favcnt+1 where bid=?"; // 좋아요+1
+	String sql_delete=""; // 해당 게시글의 작성자만이 삭제가능
+	String sql_selectAll="select * from board order by bid desc"; // "더보기": pagination(페이지네이션)
+		// oracle에서 limit사용하는 sql문
+	
+	String sql_insertR="";
+	String sql_deleteR="";
 	
 	public ArrayList<BoardSet> selectAll(int mcnt){ // 몇개의 글을 볼수있는지에 대한 정보를 받아옴
 		ArrayList<BoardSet> datas=new ArrayList<BoardSet>();
 		conn=JDBCUtil.connect();
 		try {
 			pstmt=conn.prepareStatement(sql_selectAll);
-			pstmt.setInt(1, mcnt);
+			//pstmt.setInt(1, mcnt);
+			System.out.println("mcnt: "+mcnt);
 			rs=pstmt.executeQuery();
 			while(rs.next()) {
 				BoardSet bs=new BoardSet();
@@ -59,5 +65,20 @@ public class BoardDAO {
 			JDBCUtil.disconnect(pstmt, conn);
 		}		
 		return datas;
+	}
+	public boolean update(BoardVO vo) {
+		conn=JDBCUtil.connect();
+		try {
+			pstmt=conn.prepareStatement(sql_update);
+			pstmt.setInt(1, vo.getBid());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			System.out.println("BoardDAO update()에서 문제발생!");
+			e.printStackTrace();
+			return false;
+		} finally {
+			JDBCUtil.disconnect(pstmt, conn);
+		}
+		return true;
 	}
 }
