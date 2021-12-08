@@ -24,11 +24,12 @@
     <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
     <fullyQualifiedTypeName name="day13.Member"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebListener"/>
-    <fullyQualifiedTypeName name="model.common.JDBCUtil"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebInitParam"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="model.board.BoardVO"/>
     <fullyQualifiedTypeName name="model.board.ReplyVO"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.board.BoardDAO"/>
+    <fullyQualifiedTypeName name="model.common.JDBCUtil"/>
 </qualifiedTypeNameHistroy>
