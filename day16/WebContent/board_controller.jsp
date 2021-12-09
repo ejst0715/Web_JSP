@@ -29,4 +29,20 @@
 			System.out.println("fav 액션에서 문제발생!");
 		}
 	}
+/*	else if(action.equals("deleteB")){
+		if(){
+			
+		}
+		else{
+			System.out.println("deleteB 액션에서 문제발생!");
+		}
+	}
+	else if(action.equals("deleteR")){
+		if(){
+			
+		}
+		else{
+			System.out.println("deleteR 액션에서 문제발생!");
+		}*/
+	
 %>
