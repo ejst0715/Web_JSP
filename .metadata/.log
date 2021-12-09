@@ -2276,3 +2276,141 @@ org.apache.lucene.store.LockObtainFailedException: lock instance already obtaine
 	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
 	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-12-09 19:41:33.051
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on 알려진 호스트가 없습니다 (jope.ow2.org). Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: 알려진 호스트가 없습니다 (jope.ow2.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1519)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-12-09 19:41:33.262
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1368)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1302)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.jface.text 2 0 2021-12-09 20:12:52.704
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-12-09 20:12:52.720
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-12-09 20:21:59.773
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:05:09.257
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:05:09.260
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@1fdc3182 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@67b21c0b, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:08:07.573
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:08:07.573
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@1fdc3182 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@67b21c0b, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:09:54.462
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:09:54.462
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@1fdc3182 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@67b21c0b, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:10:46.945
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-09 21:10:46.945
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@1fdc3182 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@67b21c0b, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
