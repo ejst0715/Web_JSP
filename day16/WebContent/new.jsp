@@ -9,7 +9,7 @@
 <body>
 
 <h2>회원가입 페이지</h2>
-<form action="member_controller.jsp?action=new" method="post">
+<form action="member_controller.jsp?action=new" method="post"> 
 	<table border="1">
 		<tr>
 			<td>아이디</td>
