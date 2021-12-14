@@ -1,13 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%--@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="java.util.ArrayList, model.BoardVO"
-	errorPage="error/error.jsp"%>
-<%
+	errorPage="error/error.jsp"--%>
+<%--
 	request.setCharacterEncoding("UTF-8");
-%>
-<jsp:useBean id="dao" class="model.BoardDAO" />
+--%>
+<%-- <jsp:useBean id="dao" class="model.BoardDAO" />
 <jsp:useBean id="vo" class="model.BoardVO" />
 <jsp:setProperty property="*" name="vo" />
-<%
+--%>
+<%--
 	// index C에게 main페이지 요청
 	// C main페이지는 ... 데이터가 있어야되는데...
 	//       M 데이터 가져와.
@@ -20,9 +21,9 @@
 	if (action.equals("main")) {
 		ArrayList<BoardVO> datas = dao.selectAll();
 		// 1. M에게서 데이터를 확보
-		request.setAttribute("datas", datas);
+		request.setAttribute("datas", datas);	//데이터를 보내는지에 대한 여부
 		// 2. V한테 데이터를 전달
-		pageContext.forward("main.jsp");
+		pageContext.forward("main.jsp");	//어디로 보내는지에 대한 페이지정보
 	} else if (action.equals("board")) {
 		// 상세페이지보여줘!
 		// 1. M에게서 데이터를 확보
@@ -48,4 +49,4 @@
 	} else {
 		out.println("<script>alert('action파라미터의 값이 올바르지않습니다!')</script>");
 	}
-%>
+--%>
