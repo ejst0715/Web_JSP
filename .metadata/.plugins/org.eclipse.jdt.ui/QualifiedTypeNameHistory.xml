@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="model.BoardVO"/>
     <fullyQualifiedTypeName name="model.JDBCUtil"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
@@ -29,7 +28,11 @@
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="model.board.BoardVO"/>
     <fullyQualifiedTypeName name="model.board.ReplyVO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="model.board.BoardDAO"/>
     <fullyQualifiedTypeName name="model.common.JDBCUtil"/>
+    <fullyQualifiedTypeName name="model.BoardDAO"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="model.BoardVO"/>
+    <fullyQualifiedTypeName name="controller.ActionForward"/>
+    <fullyQualifiedTypeName name="controller.Action"/>
 </qualifiedTypeNameHistroy>
