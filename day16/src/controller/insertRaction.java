@@ -11,7 +11,10 @@ public class insertRaction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	
+	
 		ReplyVO rvo = new ReplyVO();
+		
 		rvo.setBid(Integer.parseInt(request.getParameter("bid")));
 		rvo.setMid(request.getParameter("mid"));
 		rvo.setRmsg(request.getParameter("msg"));
