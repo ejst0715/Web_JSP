@@ -23,6 +23,7 @@ public class InsertAction implements Action{
       forward.setPath("main.do");
       forward.setRedirect(true);
       return forward;
+      
    }
 
 }
