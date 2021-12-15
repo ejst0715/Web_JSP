@@ -19,9 +19,6 @@ public class InsertAction implements Action{
       BoardDAO dao=new BoardDAO();
       dao.insert(vo);
       
-      ArrayList<BoardVO> datas=dao.selectAll();
-      request.setAttribute("datas", datas);
-      
       ActionForward forward=new ActionForward();
       forward.setPath("main.do");
       forward.setRedirect(true);
