@@ -37,3 +37,5 @@ C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1433
 \day04\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3108204308.index
 \day06\src
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\43866334.index
+\MyApplication\src
