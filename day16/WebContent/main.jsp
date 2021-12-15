@@ -43,7 +43,7 @@ a:hover {
 	</ul>
 
 	<hr>
-	<form action="board_controller.jsp?action=insertB" method="post">
+	<form action="insertB.do" method="post">
 		<input type="hidden" name="mid" value="${mid}">
 		<mytag:msg type="board" />
 	</form>
@@ -56,7 +56,7 @@ a:hover {
 			${bvo.mid}님의 글: ${bvo.msg} [좋아요: ${bvo.favcnt} | 댓글: ${bvo.rcnt}]
 			<mytag:removeB rmid="${bvo.mid}" bid="${bvo.bid}" />
 			<div class="b">
-				<form action="board_controller.jsp?action=insertR&cnt=${cnt}" method="post">
+				<form action="insertR.do?cnt=${cnt}" method="post">
 					<input type="hidden" name="mid" value="${mid}">
 					<input type="hidden" name="bid" value="${bvo.bid}">
 					<mytag:msg type="reply" />
@@ -69,7 +69,7 @@ a:hover {
 		<br>
 	</c:forEach>
 
-	<a href="board_controller.jsp?action=main&cnt=${cnt+2}">[더보기]</a>
+	<a href="main.do?cnt=${cnt+2}">[더보기]</a>
 
 </body>
 </html>
