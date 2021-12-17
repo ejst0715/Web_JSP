@@ -5,29 +5,20 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.board.BoardDAO;
 import model.board.BoardVO;
-import model.board.ReplyVO;
 
-public class insertRaction implements Action {
+public class DeleteBAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-	
-	
-		ReplyVO rvo = new ReplyVO();
+		BoardDAO dao=new BoardDAO();
+		BoardVO vo=new BoardVO();
+		vo.setBid(Integer.parseInt(request.getParameter("bid")));
+		dao.delete(vo);
 		
-		rvo.setBid(Integer.parseInt(request.getParameter("bid")));
-		rvo.setMid(request.getParameter("mid"));
-		rvo.setRmsg(request.getParameter("rmsg"));
-		
-		BoardDAO dao = new BoardDAO();
-		dao.insertR(rvo);
-		
-		ActionForward forward = new ActionForward();
+		ActionForward forward=new ActionForward();
 		forward.setPath("main.do");
 		forward.setRedirect(false);
-		
 		return forward;
-	
 	}
 	
 }

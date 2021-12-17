@@ -15,8 +15,6 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter({"*.jsp","*.do","*.mem"})
 public class EncFilter implements Filter {
 
-	private String encoding; // 외부의 환경설정파일(web.xml)의 값을 저장할 멤버변수
-	
     /**
      * Default constructor. 
      */
@@ -35,7 +33,7 @@ public class EncFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		request.setCharacterEncoding(encoding); // 하드코딩xxx -> 초기화 매개변수
+		request.setCharacterEncoding("UTF-8");
 		chain.doFilter(request, response);
 	}
 
@@ -43,7 +41,7 @@ public class EncFilter implements Filter {
 	 * @see Filter#init(FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
-		this.encoding=fConfig.getServletContext().getInitParameter("encoding");
+		
 	}
 
 }
