@@ -33,10 +33,10 @@
     <fullyQualifiedTypeName name="model.board.BoardSet"/>
     <fullyQualifiedTypeName name="controller.ActionForward"/>
     <fullyQualifiedTypeName name="model.board.BoardDAO"/>
-    <fullyQualifiedTypeName name="model.board.BoardVO"/>
     <fullyQualifiedTypeName name="model.board.ReplyVO"/>
     <fullyQualifiedTypeName name="controller.Action"/>
     <fullyQualifiedTypeName name="controller.LogoutAction"/>
     <fullyQualifiedTypeName name="controller.insertRaction"/>
     <fullyQualifiedTypeName name="controller.InsertBaction"/>
+    <fullyQualifiedTypeName name="model.board.BoardVO"/>
 </qualifiedTypeNameHistroy>
