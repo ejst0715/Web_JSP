@@ -40,4 +40,9 @@
     <fullyQualifiedTypeName name="controller.InsertBaction"/>
     <fullyQualifiedTypeName name="model.board.BoardVO"/>
     <fullyQualifiedTypeName name="controller.FavAction"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="test.JDBCUtil"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
