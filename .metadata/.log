@@ -10117,3 +10117,19 @@ org.apache.lucene.store.LockObtainFailedException: lock instance already obtaine
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-12-19 03:29:36.044
 !MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-12-19 04:02:11.241
+!MESSAGE An internal error occurred during: "drop table TB_COIN".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.saveElapseTime(ResultsViewAPI.java:708)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.run(ResultSupportRunnable.java:230)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-12-19 04:02:11.242
+!MESSAGE An internal error occurred during: "SQL Statement Execution".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.saveParentElapseTime(ResultsViewAPI.java:723)
+	at org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable.run(GroupSQLResultRunnable.java:307)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
