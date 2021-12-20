@@ -45,4 +45,6 @@
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="test.JDBCUtil"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="test.IPhone"/>
+    <fullyQualifiedTypeName name="test.Phone"/>
 </qualifiedTypeNameHistroy>
