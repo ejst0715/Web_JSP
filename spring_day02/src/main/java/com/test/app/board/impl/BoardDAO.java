@@ -18,7 +18,7 @@ public class BoardDAO {
    private PreparedStatement pstmt=null;
    private ResultSet rs=null;
    
-   private String board_insert="insert into board2(bid,title,writer,content) values((select nvl(max(bid),0)+1 from board),?,?,?)";
+   private String board_insert="insert into board2(bid,title,writer,content) values((select nvl(max(bid),0)+1 from board2),?,?,?)";
    private String board_update="update board2 set title=?,content=? where bid=?";
    private String board_delete="delete board2 where bid=?";
    private String board_selectOne="select * from board2 where bid=?";
