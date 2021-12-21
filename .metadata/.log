@@ -3908,3 +3908,19 @@ org.apache.lucene.store.LockObtainFailedException: lock instance already obtaine
 	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
 	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-12-21 21:50:58.385
+!MESSAGE An internal error occurred during: "select * from all_tables".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.saveElapseTime(ResultsViewAPI.java:708)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.run(ResultSupportRunnable.java:230)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-12-21 21:50:58.385
+!MESSAGE An internal error occurred during: "SQL Statement Execution".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.saveParentElapseTime(ResultsViewAPI.java:723)
+	at org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable.run(GroupSQLResultRunnable.java:307)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
