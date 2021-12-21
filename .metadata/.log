@@ -3760,3 +3760,151 @@ java.lang.NoClassDefFoundError: javax/annotation/PostConstruct
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 20:41:07.131
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:36:34.288
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:36:34.293
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:36:50.477
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:36:50.481
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:37:33.507
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:37:33.512
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:39:07.935
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:39:07.938
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:39:49.595
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:39:49.597
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:43:11.119
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:43:11.119
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2155e1e2 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@53937f1a, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:31.231
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:31.234
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:54.791
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:54.792
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:57.171
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-21 21:43:57.173
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:24.961
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:24.961
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2155e1e2 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@53937f1a, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:28.021
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:28.022
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2155e1e2 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@53937f1a, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:30.845
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:47:30.845
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2155e1e2 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@53937f1a, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:48:15.462
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-21 21:48:15.463
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2155e1e2 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@53937f1a, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
