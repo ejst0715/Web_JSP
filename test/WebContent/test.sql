@@ -8,6 +8,6 @@ CREATE TABLE TB_COIN(
 	COINDEAL INT
 );
 
-SELECT * FROM TB_COIN;
+SELECT * FROM all_tables;
 
 drop table TB_COIN;
