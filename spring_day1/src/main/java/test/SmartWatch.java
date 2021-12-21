@@ -1,5 +1,6 @@
 package test;
 
+//@Component("smartWatch")
 public class SmartWatch implements Watch{
 	public SmartWatch() {
 		System.out.println("스마트워치 객체생성");

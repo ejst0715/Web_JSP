@@ -12,14 +12,16 @@ public class Client {
 		
 		AbstractApplicationContext factory=new GenericXmlApplicationContext("applicationContext.xml");
 		
-		/*Phone phone=(Phone)factory.getBean("iPhone");
+		Phone phone=(Phone)factory.getBean("phone");
 		phone.volumeUp();
 		phone.volumeDown();
-		phone.msg();*/
+		phone.msg();
 		
-		Phone p1=(Phone)factory.getBean("galaxyPhone");
+		/*Phone p1=(Phone)factory.getBean("galaxyPhone");
 		Phone p2=(Phone)factory.getBean("galaxyPhone");
-		Phone p3=(Phone)factory.getBean("galaxyPhone");
+		Phone p3=(Phone)factory.getBean("galaxyPhone");*/
+		
+		
 		
 		factory.close();
 	}
