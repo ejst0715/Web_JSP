@@ -10,3 +10,15 @@ create table board2(
 );
 
 select * from BOARD2;
+
+
+create table member2(
+	mid varchar(10) primary key,
+	password varchar(10),
+	name varchar(10),
+	role varchar(10)
+);
+
+select * from member2;
+
+insert into member2 values('bang','1234','길동','user');

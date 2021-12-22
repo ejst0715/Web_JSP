@@ -71,7 +71,7 @@ public class BoardDAO {
          pstmt=conn.prepareStatement(board_selectOne);
          pstmt.setInt(1, vo.getBid());
          rs=pstmt.executeQuery();
-         while(rs.next()) {
+         if(rs.next()) {
             data=new BoardVO();
             data.setBdate(rs.getDate("bdate"));
             data.setBid(rs.getInt("bid"));
