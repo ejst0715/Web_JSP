@@ -9670,3 +9670,102 @@ java.lang.NoSuchMethodError: 'long org.apache.lucene.index.IndexWriter.addDocume
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-12-28 03:54:22.720
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-28 04:02:51.485
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-28 04:02:51.485
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@2111c3cc lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@22c2365d, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.removeResults(ResultHistoryLuceneIndex.java:175)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.removeResult(ResultHistoryLuceneIndex.java:159)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceRemoved(HistoryIndexListener.java:34)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireRemoved(ResultManager.java:117)
+	at org.eclipse.datatools.sqltools.result.ResultManager.removeResultInstance(ResultManager.java:200)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.syncResults(ResultsViewPlugin.java:409)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.stop(ResultsViewPlugin.java:148)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1016)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:359)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1723)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1642)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:192)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:210)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2021-12-28 04:02:51.486
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.datatools.sqltools.result.ResultsViewPlugin.stop() of bundle org.eclipse.datatools.sqltools.result.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:855)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1016)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:359)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1723)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1642)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:192)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:210)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ui.ResultViewUIUtil.checkResultView(ResultViewUIUtil.java:69)
+	at org.eclipse.datatools.sqltools.result.ui.ResultsViewUIPlugin$ResultViewControlListener.getResultsViewConstrol(ResultsViewUIPlugin.java:231)
+	at org.eclipse.datatools.sqltools.result.ui.ResultsViewUIPlugin$ResultViewControlListener.resultInstanceRemoved(ResultsViewUIPlugin.java:214)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireRemoved(ResultManager.java:117)
+	at org.eclipse.datatools.sqltools.result.ResultManager.removeResultInstance(ResultManager.java:200)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.syncResults(ResultsViewPlugin.java:409)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.stop(ResultsViewPlugin.java:148)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.datatools.sqltools.result.ui.ResultViewUIUtil.checkResultView(ResultViewUIUtil.java:69)
+	at org.eclipse.datatools.sqltools.result.ui.ResultsViewUIPlugin$ResultViewControlListener.getResultsViewConstrol(ResultsViewUIPlugin.java:231)
+	at org.eclipse.datatools.sqltools.result.ui.ResultsViewUIPlugin$ResultViewControlListener.resultInstanceRemoved(ResultsViewUIPlugin.java:214)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireRemoved(ResultManager.java:117)
+	at org.eclipse.datatools.sqltools.result.ResultManager.removeResultInstance(ResultManager.java:200)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.syncResults(ResultsViewPlugin.java:409)
+	at org.eclipse.datatools.sqltools.result.ResultsViewPlugin.stop(ResultsViewPlugin.java:148)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1016)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:359)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1723)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1642)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:192)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:210)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-12-28 04:02:51.850
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.SimpleSQLResultRunnable
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-12-28 04:02:51.852
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable
