@@ -1,23 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>메인 페이지</title>
 </head>
-<%
-	// 1. Model로부터(==DAO.selectAll()) 데이터를 받아오는 로직을 구현
-	// 2. request.set()을 통해 EL등으로 View표현가능하게해야함
-%>
 <body>
 
 <h1>게시글 목록</h1>
-<a href="logout_C.jsp">로그아웃</a>
+<a href="logout.do">로그아웃</a>
 
 <hr>
 
-<form action="main.jsp" method="post">
+<form action="main.do" method="post">
 	<table width="1000">
 		<tr>
 			<td><select name="searchCondition">
@@ -37,8 +34,15 @@
 		<th>작성일</th>
 		<th>조회수</th>
 	</tr>
-	<!-- JSTL -->
-	<a href="board.jsp?bid=${v.bid}">${v.bid}</a>
+	<c:forEach var="v" items="${datas}">
+		<tr>
+			<td><a href="board.do?bid=${v.bid}">${v.bid}</a></td>
+			<td>${v.title}</td>
+			<td>${v.writer}</td>
+			<td>${v.bdate}</td>
+			<td>${v.cnt}</td>
+		</tr>
+	</c:forEach>
 </table>
 
 <hr>
