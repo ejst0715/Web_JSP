@@ -2,25 +2,25 @@ package com.test.app.board;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
 import com.test.app.board.impl.BoardDAO;
 
-public class BoardController implements Controller {
+public class UpdateBoardController implements Controller{
 
 	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
+	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
 		BoardVO vo=new BoardVO();
-		vo.setBid(Integer.parseInt(request.getParameter("bid")));
+		vo.setContent(arg0.getParameter("content"));
+		vo.setTitle(arg0.getParameter("title"));
+		vo.setBid(Integer.parseInt(arg0.getParameter("bid")));
 		BoardDAO dao=new BoardDAO();
-		BoardVO data=dao.selectOne(vo);
+		dao.updateBoard(vo);
 		
 		ModelAndView mav=new ModelAndView();
-		mav.addObject("data",data);
-		mav.setViewName("board.jsp");
+		mav.setViewName("main.do");
 		return mav;
 	}
 
