@@ -20,7 +20,7 @@ public class BoardController implements Controller {
 		
 		ModelAndView mav=new ModelAndView();
 		mav.addObject("data",data);
-		mav.setViewName("board.jsp");
+		mav.setViewName("board");
 		return mav;
 	}
 

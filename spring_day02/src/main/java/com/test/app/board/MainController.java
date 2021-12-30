@@ -21,7 +21,7 @@ public class MainController implements Controller{
 		
 		ModelAndView mav=new ModelAndView();
 		mav.addObject("datas", datas);
-		mav.setViewName("main.jsp");
+		mav.setViewName("main");
 		return mav;
 	}
 

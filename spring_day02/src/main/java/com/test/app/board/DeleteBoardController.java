@@ -18,7 +18,7 @@ public class DeleteBoardController implements Controller {
 		dao.deleteBoard(vo);
 		
 		ModelAndView mav=new ModelAndView();
-		mav.setViewName("main.do");
+		mav.setViewName("redirect:main.do");
 		return mav;
 	}
 

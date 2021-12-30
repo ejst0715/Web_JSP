@@ -12,6 +12,7 @@
 <a href="main.do">메인 페이지로 이동하기</a>
 <hr>
 <form action="updateBoard.do" method="post">
+<input type="hidden" name="bid" value="${data.bid}">
 	<table border="1">
 		<tr>
 			<td>글 제목</td>

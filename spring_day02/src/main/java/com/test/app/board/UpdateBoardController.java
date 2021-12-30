@@ -20,7 +20,7 @@ public class UpdateBoardController implements Controller{
 		dao.updateBoard(vo);
 		
 		ModelAndView mav=new ModelAndView();
-		mav.setViewName("main.do");
+		mav.setViewName("redirect:main.do");
 		return mav;
 	}
 
