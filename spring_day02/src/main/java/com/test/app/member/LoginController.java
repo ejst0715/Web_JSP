@@ -25,7 +25,7 @@ public class LoginController implements Controller{
          mav.setViewName("redirect:main.do");
       }
       else {
-         mav.setViewName("redirect:login.jsp");
+         mav.setViewName("redirect:index.jsp");
       }
       return mav;
    }
