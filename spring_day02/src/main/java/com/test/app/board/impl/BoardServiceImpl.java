@@ -12,7 +12,7 @@ import com.test.app.board.BoardVO;
 public class BoardServiceImpl implements BoardService{
 	@Autowired
 	private BoardDAO boardDAO;
-	
+		
 	@Override
 	public void insertBoard(BoardVO vo) {
 		boardDAO.insertBoard(vo);
@@ -25,18 +25,17 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public void deleteBoard(BoardVO vo) {
-		// TODO Auto-generated method stub
-		
+		boardDAO.deleteBoard(vo);
 	}
 
 	@Override
 	public BoardVO selectOne(BoardVO vo) {
-		// TODO Auto-generated method stub
-		return null;
+		return boardDAO.selectOne(vo);
 	}
 
 	@Override
 	public List<BoardVO> selectAll(BoardVO vo) {
+		System.out.println("어드바이스 동작시점 확인중...");
 		return boardDAO.selectAll(vo);
 	}
 
