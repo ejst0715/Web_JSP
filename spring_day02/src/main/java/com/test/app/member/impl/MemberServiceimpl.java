@@ -7,23 +7,15 @@ import com.test.app.member.MemberService;
 import com.test.app.member.MemberVO;
 
 @Service("memberService")
-public class MemberServiceimpl implements MemberService	{
+public class MemberServiceImpl implements MemberService	{
 	@Autowired
-	private MemberDAO memberDAO;
-	
-	
-	
+	private MemberDAO memberDAO;	
 	public MemberDAO getMemberDAO() {
 		return memberDAO;
 	}
-
-
-
 	public void setMemberDAO(MemberDAO memberDAO) {
 		this.memberDAO = memberDAO;
 	}
-
-
 
 	@Override
 	public MemberVO selectOne(MemberVO vo) {
@@ -31,5 +23,3 @@ public class MemberServiceimpl implements MemberService	{
 	}
 
 }
-// 1. applicationContext.xml에서 setter로 DI(의존성 주입)
-// 2. @ 변경
