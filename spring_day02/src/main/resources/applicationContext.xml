@@ -13,7 +13,9 @@
 	</bean>
 	<bean id="memberDAO" class="com.test.app.member.impl.MemberDAO" /> -->
 
-	<bean id="aa" class="com.test.app.common.AfterAdvice" />
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+	<!-- <bean id="aa" class="com.test.app.common.AfterAdvice" />
 	<bean id="ara" class="com.test.app.common.AfterReturningAdvice" />
 	<bean id="ata" class="com.test.app.common.AfterThrowingAdvice" />
 	<bean id="aa2" class="com.test.app.common.AroundAdvice" />
@@ -24,7 +26,7 @@
 		<aop:pointcut expression="execution(* com.test.app..*Impl.select*(..))" id="bPointcut"/>
 		
 		<aop:aspect ref="aa2">
-			<aop:around pointcut-ref="bPointcut" method="aroundLog"/>
+			<aop:around method="aroundLog" pointcut-ref="bPointcut"/>
 		</aop:aspect>
-	</aop:config>
+	</aop:config> -->
 </beans>
