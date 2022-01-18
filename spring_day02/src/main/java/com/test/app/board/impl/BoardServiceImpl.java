@@ -11,13 +11,13 @@ import com.test.app.board.BoardVO;
 @Service("boardService")
 public class BoardServiceImpl implements BoardService{
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAO2 boardDAO;
 		
 	@Override
 	public void insertBoard(BoardVO vo) {
-//		if(vo.getWriter().equals("티모")) {
-//			throw new IllegalArgumentException("일부러 발생시킨 예외");
-//		}
+		if(vo.getWriter().equals("티모")) {
+			throw new IllegalArgumentException("일부러 발생시킨 예외");
+		}
 		boardDAO.insertBoard(vo);
 	}
 
