@@ -1,27 +1,16 @@
 package com.test.app.board;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
 
-import com.test.app.board.impl.BoardDAO;
+@Controller
+public class InsertBoardController {
+	//Servler에 대한 강제가 들어가게되어, POJO라고 생각하지않음 -> 경량이 아님.
 
-public class InsertBoardController implements Controller{
-
-	@Override
-	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
-		BoardVO vo=new BoardVO();
-		vo.setContent(arg0.getParameter("content"));
-		vo.setTitle(arg0.getParameter("title"));
-		vo.setWriter(arg0.getParameter("writer"));
-		BoardDAO dao=new BoardDAO();
-		dao.insertBoard(vo);
+	public void insertBoard(HttpSer) {
+		System.out.println("로그: insertBoard() @컨트롤러");
 		
-		ModelAndView mav=new ModelAndView();
-		mav.setViewName("redirect:main.do");
-		return mav;
+		
 	}
 
 }
