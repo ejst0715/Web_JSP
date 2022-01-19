@@ -20,7 +20,17 @@ public class MemberClient {
       else {
          System.out.println(" ["+data.getRole()+"]"+data.getName()+"님, 반갑습니다!:D");
       }
-   
+      
+        vo.setMid("test");
+		vo.setName("나르");
+		vo.setPassword("4321");
+		vo.setRole("USER");
+		try {
+			ms.insertMember(vo);
+		} catch (Exception e) {
+			System.out.println("에러페이지");
+		}
+      
       factory.close();
    }
 }
