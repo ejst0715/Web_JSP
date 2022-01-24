@@ -1,27 +1,42 @@
 package com.test.app.board;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.test.app.board.impl.BoardDAO;
 
-public class BoardController implements Controller {
+@Controller
+public class BoardController {
 
-	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
-		BoardVO vo=new BoardVO();
-		vo.setBid(Integer.parseInt(request.getParameter("bid")));
-		BoardDAO dao=new BoardDAO();
-		BoardVO data=dao.selectOne(vo);
-		
-		ModelAndView mav=new ModelAndView();
-		mav.addObject("data",data);
-		mav.setViewName("board");
-		return mav;
+	@RequestMapping("/board.do")
+	public String board(BoardVO vo,BoardDAO dao,Model model) {
+		System.out.println("로그: board() @컨트롤러");
+		model.addAttribute("data", dao.selectOne(vo));
+		return "board.jsp";
 	}
-
+	@RequestMapping(value="/insertBoard.do")
+	public String insertBoard(BoardVO vo,BoardDAO dao) {
+		System.out.println("로그: insertBoard() @컨트롤러");
+		dao.insertBoard(vo);
+		return "main.do";
+	}
+	@RequestMapping("/main.do")
+	public String main(BoardVO vo,BoardDAO dao,Model model) {
+		System.out.println("로그: main() @컨트롤러");
+		model.addAttribute("datas",dao.selectAll(vo));
+		return "main.jsp";
+	}
+	@RequestMapping("/updateBoard.do")
+	public String updateBoard(BoardVO vo,BoardDAO dao) {
+		System.out.println("로그: updateBoard() @컨트롤러");
+		dao.updateBoard(vo);
+		return "main.do";
+	}
+	@RequestMapping("/deleteBoard.do")
+	public String deleteBoard(BoardVO vo,BoardDAO dao) {
+		System.out.println("로그: deleteBoard() @컨트롤러");
+		dao.deleteBoard(vo);
+		return "main.do";
+	}
 }

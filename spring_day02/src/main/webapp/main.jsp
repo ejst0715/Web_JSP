@@ -10,12 +10,13 @@
 <body>
 
 <h1>게시글 목록</h1>
+<h2>${userName}님, 안녕하세요! :D</h2>
 <a href="logout.do">로그아웃</a>
 
 <hr>
 
 <form action="main.do" method="post">
-	<table width="1000">
+	<table>
 		<tr>
 			<td><select name="searchCondition">
 				<option value="title">제목</option>
@@ -26,7 +27,7 @@
 		</tr>
 	</table>
 </form>
-<table border="1" width="1000">
+<table border="1">
 	<tr>
 		<th>글 번호</th>
 		<th>글 제목</th>

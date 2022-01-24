@@ -8,21 +8,7 @@
 </head>
 <body>
 
-<form action="login.do" method="post">
-	<table border="1">
-		<tr>
-			<td>아이디</td>
-			<td><input type="text" name="mid"></td>
-		</tr>
-		<tr>
-			<td>비밀번호</td>
-			<td><input type="password" name="password"></td>
-		</tr>
-		<tr>
-			<td colspan="2" align="right"><input type="submit" value="로그인하기"></td>
-		</tr>
-	</table>
-</form>
+<a href="login.do">로그인화면으로 이동하기</a>
 
 </body>
 </html>
