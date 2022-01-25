@@ -25,7 +25,6 @@ INDEX VERSION 1.131+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jdt.cor
 2002905392.index
 3079596546.index
 2651278305.index
-1093312743.index
 1838275218.index
 2700732391.index
 2860602595.index
