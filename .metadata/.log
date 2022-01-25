@@ -2041,3 +2041,249 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-01-25 20:12:12.756
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-01-25 20:29:55.270
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2022-01-25 20:29:55.270
+!MESSAGE Could not delete C:/Bang_web/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/spring_day02/WEB-INF/lib. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2022-01-25 20:29:55.270
+!MESSAGE Could not delete C:/Bang_web/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/spring_day02/WEB-INF. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-01-25 20:30:05.960
+!MESSAGE Several ports (8005, 8081) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-01-25 20:37:26.420
+!MESSAGE An internal error occurred during: "Handle Result Sets".
+!STACK 0
+java.lang.NoSuchMethodError: 'long org.apache.lucene.index.IndexWriter.addDocument(java.lang.Iterable)'
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:139)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:37:49.777
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:37:49.777
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@71769652 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@5fa9d195, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:38:01.425
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:38:01.426
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@71769652 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@5fa9d195, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:38:03.892
+!MESSAGE No resource is associated with key "ResultHistoryLuceneIndex_io_error".
+
+!ENTRY org.eclipse.datatools.sqltools.result 4 0 2022-01-25 20:38:03.893
+!MESSAGE ResultHistoryLuceneIndex_io_error possible args: {0}, {1}, {2}, {3}
+!STACK 0
+org.apache.lucene.store.LockObtainFailedException: lock instance already obtained: (dir=RAMDirectory@71769652 lockFactory=org.apache.lucene.store.SingleInstanceLockFactory@5fa9d195, lockName=write.lock)
+	at org.apache.lucene.store.SingleInstanceLockFactory.obtainLock(SingleInstanceLockFactory.java:44)
+	at org.apache.lucene.store.BaseDirectory.obtainLock(BaseDirectory.java:45)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:776)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResults(ResultHistoryLuceneIndex.java:116)
+	at org.eclipse.datatools.sqltools.result.internal.index.ResultHistoryLuceneIndex.addResult(ResultHistoryLuceneIndex.java:86)
+	at org.eclipse.datatools.sqltools.result.internal.index.HistoryIndexListener.resultInstanceStatusUpdated(HistoryIndexListener.java:53)
+	at org.eclipse.datatools.sqltools.result.ResultManager.fireStatusUpdated(ResultManager.java:135)
+	at org.eclipse.datatools.sqltools.result.internal.model.ResultInstance.updateStatus(ResultInstance.java:244)
+	at org.eclipse.datatools.sqltools.result.ResultsViewAPI.updateStatus(ResultsViewAPI.java:563)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable.handleSuccess(ResultSupportRunnable.java:422)
+	at org.eclipse.datatools.sqltools.editor.core.result.ResultSupportRunnable$HandleSuccessJob.run(ResultSupportRunnable.java:302)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2022-01-25 21:08:42.121
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to connect to repository http://testng.org/testng-p2-update-site/6.13.1/compositeContent.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:74)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:97)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at jdk.internal.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:165)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:121)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at jdk.internal.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-01-25 21:08:42.124
+!MESSAGE Unable to connect to repository http://testng.org/testng-p2-update-site/6.13.1/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2022-01-25 21:08:42.131
+!MESSAGE Unable to read repository at http://testng.org/testng-p2-update-site/.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to connect to repository http://testng.org/testng-p2-update-site/6.13.1/compositeContent.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:74)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:97)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at jdk.internal.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:165)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:121)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at jdk.internal.reflect.GeneratedMethodAccessor148.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-01-25 21:08:42.132
+!MESSAGE Unable to connect to repository http://testng.org/testng-p2-update-site/6.13.1/compositeContent.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-25 21:08:54.035
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-01-25 21:09:00.776
+!MESSAGE No repository found at https://dist.springsource.com/snapshot/TOOLS/nightly/e4.18.
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-01-25 22:22:35.344
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.SimpleSQLResultRunnable
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-01-25 22:22:35.346
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable
