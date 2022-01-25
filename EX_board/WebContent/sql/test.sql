@@ -12,4 +12,4 @@ insert into BOARD values(1,'홍길동','제목입니다','안녕하세요');
 insert into BOARD values(2,'김철수','제목입니다2','안녕하세요2');
 
 select * from board;
-drop table board;
+drop table member2;
