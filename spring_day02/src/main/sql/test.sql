@@ -10,7 +10,7 @@ create table board2(
 );
 /* MySQL: insert ? now() */
 
-select * from board;
+select * from board2;
 
 create table member2(
 	mid varchar(10) primary key,
@@ -20,4 +20,4 @@ create table member2(
 );
 insert into member values('kim','1234','티모','USER');
 insert into member values('admin','1234','관리자','ADMIN');
-select * from member;
+select * from member2;
