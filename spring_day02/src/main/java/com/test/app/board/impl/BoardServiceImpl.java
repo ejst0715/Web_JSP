@@ -10,8 +10,9 @@ import com.test.app.board.BoardVO;
 
 @Service("boardService")
 public class BoardServiceImpl implements BoardService{
+	
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAO2 boardDAO;
 		
 	@Override
 	public void insertBoard(BoardVO vo) {
@@ -39,6 +40,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public List<BoardVO> selectAll(BoardVO vo) {
+		System.out.println("�뼱�뱶諛붿씠�뒪 �룞�옉�떆�젏 �솗�씤以�...");
 		return boardDAO.selectAll(vo);
 	}
 

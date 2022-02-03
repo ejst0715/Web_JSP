@@ -2,9 +2,9 @@ select * from all_tables;
 
 create table board2(
 	bid int primary key,
-	title varchar(20),
-	writer varchar(10),
-	content varchar(50),
+	title varchar(200),
+	writer varchar(100),
+	content varchar(500),
 	bdate date default sysdate,
 	cnt int default 0
 );
@@ -13,11 +13,14 @@ create table board2(
 select * from board2;
 
 create table member2(
-	mid varchar(10) primary key,
-	password varchar(10),
-	name varchar(10),
-	role varchar(10)
+	mid varchar(100) primary key,
+	password varchar(100),
+	name varchar(100),
+	role varchar(100)
 );
-insert into member values('kim','1234','티모','USER');
-insert into member values('admin','1234','관리자','ADMIN');
+insert into member2 values('kim','1234','티모','USER');
+insert into member2 values('admin','1234','관리자','ADMIN');
 select * from member2;
+
+drop table member2;
+drop table board2;

@@ -2,6 +2,7 @@ package com.test.app.member;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,12 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.test.app.member.impl.MemberDAO;
-
 @Controller
 @SessionAttributes("memData")
 public class LoginController {
 
+	@Autowired
+	MemberService ms;
+	
 	// 오버로딩 vs 오버라이딩
 	// 함수명 중복정의 허용 vs 메서드 재정의
 	@RequestMapping(value="/login.do",method=RequestMethod.GET)
@@ -25,15 +27,15 @@ public class LoginController {
 		return "login.jsp";
 	}
 	@RequestMapping(value="/login.do",method=RequestMethod.POST)
-	public String login(MemberVO vo,MemberDAO dao,HttpSession session) {
-		System.out.println("로그: login() @컨트롤러");
-		MemberVO data=dao.selectOne(vo);
+	public String login(MemberVO vo,Model model) {
+		System.out.println("로그: login() @컨트롤러 "+vo);
+		MemberVO data=ms.selectOne(vo);
 		if(data!=null) {
 			///session.setAttribute("userName", data.getName());
-			session.setAttribute("memData", data); // 마이페이지에서 이용할 데이터
+			model.addAttribute("memData", data); // 마이페이지에서 이용할 데이터
 			return "main.do";
 		}
-		return "index.jsp";
+		return "login.jsp";
 	}
 	@RequestMapping("/logout.do")
 	public String logout(HttpSession session) {
@@ -47,21 +49,21 @@ public class LoginController {
 		return "signin.jsp";
 	}
 	@RequestMapping(value="/signin.do",method=RequestMethod.POST)
-	public String signin(MemberVO vo,MemberDAO dao) {
+	public String signin(MemberVO vo) {
 		System.out.println("로그: signin() @컨트롤러 "+vo); ///////
-		dao.insertMemeber(vo);
+		ms.insertMember(vo);
 		return "login.jsp";
 	}
 	@RequestMapping(value="/mypage.do",method=RequestMethod.GET)
-	public String mypage(@ModelAttribute("memData")MemberVO vo,MemberDAO dao,Model model) {
+	public String mypage(@ModelAttribute("memData")MemberVO vo,Model model) {
 		System.out.println("GET mypage.do "+vo);
-		model.addAttribute("mem",dao.selectOne(vo));
+		model.addAttribute("mem",ms.selectOne(vo));
 		return "mypage.jsp";
 	}
 	@RequestMapping(value="/mypage.do",method=RequestMethod.POST)
-	public String mypage(@ModelAttribute("memData")MemberVO vo,MemberDAO dao) {
+	public String mypage(@ModelAttribute("memData")MemberVO vo) {
 		System.out.println("로그: mypage() @컨트롤러 "+vo); ///////
-		dao.updateMemeber(vo);	
+		ms.updateMember(vo);	
 		return "main.do";
 	}
 }

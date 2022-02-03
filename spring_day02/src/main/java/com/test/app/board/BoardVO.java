@@ -9,6 +9,23 @@ public class BoardVO {
 	private String content;
 	private Date bdate;
 	private int cnt;
+	
+	private String searchCondition;
+	private String searchContent;
+	
+	public String getSearchCondition() {
+		return searchCondition;
+	}
+	public void setSearchCondition(String searchCondition) {
+		this.searchCondition = searchCondition;
+	}
+	public String getSearchContent() {
+		return searchContent;
+	}
+	public void setSearchContent(String searchContent) {
+		this.searchContent = searchContent;
+	}
+	
 	public int getBid() {
 		return bid;
 	}

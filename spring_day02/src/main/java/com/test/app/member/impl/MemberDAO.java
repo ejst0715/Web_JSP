@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.test.app.common.JDBCUtil;
 import com.test.app.member.MemberVO;
 
-@Repository("memberDAO")
+
 public class MemberDAO {
 	private Connection conn=null;
 	private PreparedStatement pstmt=null;
@@ -20,7 +20,7 @@ public class MemberDAO {
 	private String member_selectOne="select * from member2 where mid=? and password=?";
 	private String member_update="update member2 set password=?,name=? where mid=?";
 
-	public void updateMemeber(MemberVO vo) {
+	public void updateMember(MemberVO vo) {
 		conn=JDBCUtil.connect();
 		try {
 			pstmt=conn.prepareStatement(member_update);

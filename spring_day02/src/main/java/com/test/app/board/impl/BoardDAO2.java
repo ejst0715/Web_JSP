@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import com.test.app.board.BoardVO;
 
@@ -15,6 +16,8 @@ import com.test.app.board.BoardVO;
 //		1) JdbcDAOSupport 클래스를 상속받아서 구현 -> 강제성부족
 //		2) JdbcTemplate 클래스 <bean> 등록하여 DI ◀
 
+
+@Repository("boardDAO")
 public class BoardDAO2 {
 	
 	@Autowired
