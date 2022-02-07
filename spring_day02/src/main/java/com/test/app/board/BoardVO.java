@@ -2,6 +2,8 @@ package com.test.app.board;
 
 import java.sql.Date;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class BoardVO {
 	private int bid;
 	private String title;
@@ -13,6 +15,23 @@ public class BoardVO {
 	private String searchCondition;
 	private String searchContent;
 	
+	private MultipartFile file;
+	private String filepath;
+	
+	
+	
+	public String getFilepath() {
+		return filepath;
+	}
+	public void setFilepath(String filepath) {
+		this.filepath = filepath;
+	}
+	public MultipartFile getFile() {
+		return file;
+	}
+	public void setFile(MultipartFile file) {
+		this.file = file;
+	}
 	public String getSearchCondition() {
 		return searchCondition;
 	}

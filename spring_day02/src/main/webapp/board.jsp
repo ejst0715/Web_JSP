@@ -11,6 +11,7 @@
 <h1>상세 페이지</h1>
 <a href="main.do">메인 페이지로 이동하기</a>
 <hr>
+<img alt="파일업로드" src="${data.filepath}">
 <form action="updateBoard.do" method="post">
 <input type="hidden" name="bid" value="${data.bid}">
 	<table border="1">

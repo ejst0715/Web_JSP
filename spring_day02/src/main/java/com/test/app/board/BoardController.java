@@ -1,5 +1,7 @@
 package com.test.app.board;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 @SessionAttributes("data")
@@ -17,6 +20,8 @@ public class BoardController {
 
 	@Autowired
 	BoardService bs;
+	
+	final String path="C:\\Bang_web\\workspace\\spring_day02\\src\\main\\webapp\\images\\";
 	
 	// @RequestMapping보다 먼저 호출되는 @MA
 	@ModelAttribute("conditionMap")
@@ -34,8 +39,20 @@ public class BoardController {
 		return "board.jsp";
 	}
 	@RequestMapping(value="/insertBoard.do")
-	public String insertBoard(BoardVO vo) {
+	public String insertBoard(BoardVO vo) throws IllegalStateException, IOException {
 		System.out.println("로그: insertBoard() @컨트롤러");
+		MultipartFile file=vo.getFile();
+		if(!file.isEmpty()) {
+			// 업로드를 했다면,
+			String fileName=file.getOriginalFilename();
+			System.out.println("업로드한 파일이름: "+fileName);
+			
+			file.transferTo(new File(path+fileName));
+			vo.setFilepath("images/"+fileName);
+		}
+		else {
+			vo.setFilepath("images/d.jpg"); // 디폴트로 출력할 이미지
+		}
 		bs.insertBoard(vo);
 		return "main.do";
 	}

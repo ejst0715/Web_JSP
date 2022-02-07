@@ -40,7 +40,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public List<BoardVO> selectAll(BoardVO vo) {
-		System.out.println("�뼱�뱶諛붿씠�뒪 �룞�옉�떆�젏 �솗�씤以�...");
+		System.out.println("검색로직추가함!");
 		return boardDAO.selectAll(vo);
 	}
 

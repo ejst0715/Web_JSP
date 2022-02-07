@@ -6,7 +6,8 @@ create table board2(
 	writer varchar(100),
 	content varchar(500),
 	bdate date default sysdate,
-	cnt int default 0
+	cnt int default 0,
+	filepath varchar(100)
 );
 /* MySQL: insert ? now() */
 
