@@ -23,7 +23,9 @@
 	</table>
 </form>
 <hr>
-<a href="signin.do">회원가입</a>
+<a href="signin.do">회원가입</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="login.do?lang=en">영어로</a>&nbsp;&nbsp;&nbsp;
+<a href="login.do?lang=ko">한국어로</a>
 
 </body>
 </html>
