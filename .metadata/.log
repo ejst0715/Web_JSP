@@ -11492,3 +11492,9 @@ org.apache.lucene.store.LockObtainFailedException: lock instance already obtaine
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-02-08 21:22:23.949
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-02-08 21:33:25.857
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.SimpleSQLResultRunnable
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-02-08 21:33:25.859
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable
