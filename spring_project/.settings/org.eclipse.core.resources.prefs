@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/test/app/board/BoardClient.java=UTF-8
+encoding//src/main/java/com/test/app/board/impl/BoardServiceImpl.java=UTF-8
+encoding//src/main/java/com/test/app/common/AfterReturningAdvice.java=UTF-8
+encoding//src/main/java/com/test/app/common/AfterThrowingAdvice.java=UTF-8
+encoding//src/main/java/com/test/app/common/LogAdvice.java=UTF-8
+encoding//src/main/java/com/test/app/member/MemberClient.java=UTF-8
+encoding//src/main/webapp/index.jsp=UTF-8
+encoding//src/main/webapp/login.jsp=UTF-8
