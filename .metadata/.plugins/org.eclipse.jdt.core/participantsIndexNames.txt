@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3772828426.index
+\spring_project\src\main\java
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\568334340.index
 \day03\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\194423765.index
@@ -21,6 +23,8 @@ C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4285
 \day17\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\323708001.index
 \day15\src
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\880279688.index
+\spring_project\src\main\java
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\896409237.index
 \EX_board2\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\648987399.index
@@ -45,6 +49,8 @@ C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4235
 \day13\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2701023466.index
 \spring_day03\src\main\java
+C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\907926041.index
+\spring_project\src\main\java
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1433989515.index
 \day04\src
 C:\Bang_web\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3108204308.index
