@@ -24,7 +24,18 @@
 
 	<context:component-scan base-package="com.test.app" />
 	
-	<mvc:annotation-driven></mvc:annotation-driven>
+<!-- 	<mvc:annotation-driven></mvc:annotation-driven> -->
+	
+	<!-- 예외처리 설정 -->
+   <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+      <property name="exceptionMappings">
+         <props>
+            <prop key="java.lang.NullPointerException">error/error.jsp</prop>
+            <prop key="java.lang.IllegalArgumentException">error/errorId.jsp</prop>
+         </props>
+      </property>
+      <property name="defaultErrorView" value="error/error.jsp"/>
+   </bean>
 
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">
