@@ -50,14 +50,14 @@
     <fullyQualifiedTypeName name="org.springframework.util.StopWatch"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.test.app.member.MemberService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="org.mybatis.spring.SqlSessionFactoryBean"/>
-    <fullyQualifiedTypeName name="com.test.app.board.impl.BoardDAO3"/>
     <fullyQualifiedTypeName name="com.test.app.board.BoardVO"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.test.app.board.impl.BoardDAO3"/>
 </qualifiedTypeNameHistroy>
