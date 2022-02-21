@@ -12,7 +12,7 @@ import com.test.app.board.BoardVO;
 public class BoardServiceImpl implements BoardService{
 	
 	@Autowired
-	private BoardDAO2 boardDAO;
+	private BoardDAO3 boardDAO;
 		
 	@Override
 	public void insertBoard(BoardVO vo) {
@@ -21,7 +21,7 @@ public class BoardServiceImpl implements BoardService{
 		 * IllegalArgumentException("문제발생?"); }
 		 */
 		boardDAO.insertBoard(vo);
-		///boardDAO.insertBoard(vo); // 트랜잭션 실습중 -> rollback();
+		///boardDAO.insertBoard(vo); // 트랜잭션 실습중 -> rollback(); 
 	}
 
 	@Override

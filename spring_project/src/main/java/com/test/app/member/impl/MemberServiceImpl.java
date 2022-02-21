@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.test.app.board.BoardVO;
 import com.test.app.board.impl.BoardDAO2;
+import com.test.app.board.impl.BoardDAO3;
 import com.test.app.member.MemberService;
 import com.test.app.member.MemberVO;
 
@@ -13,7 +14,7 @@ public class MemberServiceImpl implements MemberService	{
 	@Autowired
 	private MemberDAO2 memberDAO;
 	@Autowired
-	private BoardDAO2 boardDAO;
+	private BoardDAO3 boardDAO;
 	/*
 	 * public MemberDAO getMemberDAO() { return memberDAO; } public void
 	 * setMemberDAO(MemberDAO memberDAO) { this.memberDAO = memberDAO; }

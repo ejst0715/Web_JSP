@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.test.app.board.BoardVO;
 
 
-@Repository("boardDAO")
+
 public class BoardDAO2 {
 	
 	@Autowired
