@@ -12,13 +12,7 @@ import com.test.app.member.MemberVO;
 @Service("memberService")
 public class MemberServiceImpl implements MemberService	{
 	@Autowired
-	private MemberDAO2 memberDAO;
-	@Autowired
-	private BoardDAO3 boardDAO;
-	/*
-	 * public MemberDAO getMemberDAO() { return memberDAO; } public void
-	 * setMemberDAO(MemberDAO memberDAO) { this.memberDAO = memberDAO; }
-	 */
+	private MemberDAO3 memberDAO;
 
 	@Override
 	public MemberVO selectOne(MemberVO vo) {
@@ -34,9 +28,6 @@ public class MemberServiceImpl implements MemberService	{
 	@Override
 	public void insertMember(MemberVO vo) {
 		memberDAO.insertMember(vo);
-		BoardVO board=new BoardVO();
-		board.setWriter(vo.getName()+"님께서 첫번째 글을 작성하셨습니다.");
-		boardDAO.insertBoard(board);
 	}
 
 	public void updateMember(MemberVO vo) {

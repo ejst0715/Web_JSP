@@ -3,11 +3,13 @@
 <configuration>
    <typeAliases>
       <typeAlias alias="board" type="com.test.app.board.BoardVO" />
+      <typeAlias alias="member" type="com.test.app.member.MemberVO"/>
    </typeAliases>
    
    
    <!-- Sql Mapper 설정 -->
    <mappers>
       <mapper resource="mappings/board-mapping.xml" />
+      <mapper resource="mappings/member-mapping.xml" />
    </mappers>
 </configuration>

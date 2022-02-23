@@ -16,12 +16,7 @@ public class BoardServiceImpl implements BoardService{
 		
 	@Override
 	public void insertBoard(BoardVO vo) {
-		/*
-		 * if(vo.getWriter().equals("젠이츠")) { throw new
-		 * IllegalArgumentException("문제발생?"); }
-		 */
 		boardDAO.insertBoard(vo);
-		///boardDAO.insertBoard(vo); // 트랜잭션 실습중 -> rollback(); 
 	}
 
 	@Override

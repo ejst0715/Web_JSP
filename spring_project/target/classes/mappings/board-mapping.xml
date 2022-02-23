@@ -24,7 +24,19 @@
 		bid=#{bid}
 	</select>
 
-	<select id="selectT" parameterType="board"
+	<select id="selectAll" parameterType="board"
+		resultMap="boardResult">
+		SELECT * FROM BOARD2 WHERE 1=1
+		<if test="searchCondition == 'title'">
+			AND TITLE LIKE '%'||#{searchContent}||'%'
+		</if>
+		<if test="searchCondition == 'writer'">
+			AND WRITER LIKE '%'||#{searchContent}||'%'
+		</if>
+		ORDER BY BID DESC
+	</select>
+	
+<!-- 	<select id="selectT" parameterType="board"
 		resultMap="boardResult">
       <![CDATA[
          SELECT * FROM BOARD2 WHERE TITLE LIKE '%'||#{searchContent}||'%' ORDER BY BID DESC
@@ -35,7 +47,7 @@
       <![CDATA[
          SELECT * FROM BOARD2 WHERE WRITER LIKE '%'||#{searchContent}||'%' ORDER BY BID DESC
       ]]>
-	</select>
+	</select> -->
 
 	<update id="updateBoard">
 		update board2 set title=#{title},content=#{content}

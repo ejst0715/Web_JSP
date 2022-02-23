@@ -29,10 +29,11 @@ public class BoardDAO3 {
 	}
 
 	public List<BoardVO> selectAll(BoardVO vo) {
-		if (vo.getSearchCondition().equals("title")) {
+		return mybatis.selectList("BoardDAO.selectAll", vo);
+		/*if (vo.getSearchCondition().equals("title")) {
 			return mybatis.selectList("BoardDAO.selectT", vo);
 		}
-		return mybatis.selectList("BoardDAO.selectW", vo);
+		return mybatis.selectList("BoardDAO.selectW", vo);*/
 	}
 
 	public BoardVO selectOne(BoardVO vo) {
