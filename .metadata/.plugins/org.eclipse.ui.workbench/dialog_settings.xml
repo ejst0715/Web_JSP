@@ -17,10 +17,13 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="net.harawata.mybatipse.wizard.NewXmlMapperWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.jpt.jpa"/>
+			<item value="org.eclipse.jpt.jpa/org.eclipse.jpt.jpa.eclipselink"/>
+			<item value="org.eclipse.m2e"/>
 			<item value="net.harawata.mybatipse.wizard.mybatisCategory"/>
-			<item value="org.mybatis.generator.eclipse.ui.category"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">

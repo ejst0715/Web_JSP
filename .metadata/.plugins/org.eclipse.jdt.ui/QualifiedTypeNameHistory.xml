@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="model.JDBCUtil"/>
-    <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
     <fullyQualifiedTypeName name="day12.Selection"/>
     <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.JspFragment"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="com.test.app.board.impl.BoardDAO3"/>
     <fullyQualifiedTypeName name="org.mybatis.spring.SqlSessionTemplate"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="javax.annotation.Generated"/>
+    <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 </qualifiedTypeNameHistroy>
