@@ -10623,3 +10623,9 @@ java.lang.NoClassDefFoundError: javax/annotation/PostConstruct
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-03-14 22:43:57.095
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-03-14 22:51:33.848
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.GroupSQLResultRunnable
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-03-14 22:51:33.849
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.datatools.sqltools.sqleditor.result.SimpleSQLResultRunnable
