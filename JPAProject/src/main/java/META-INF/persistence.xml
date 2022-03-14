@@ -5,23 +5,26 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="JPAProject">
 		<class>com.kim.app.board.Board2</class>
-	</persistence-unit>
-	<properties>
-		<!-- 필수 속성 -->
-		<property name="javax.persistence.jdbc.driver"
-			value="oracle.jdbc.driver.OracleDriver" />
-		<property name="javax.persistence.jdbc.url"
-			value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="javax.persistence.jdbc.user" value="bang" />
-		<property name="javax.persistence.jdbc.password" value="1234" />
-		<property name="hibernate.dialect"
-			value="org.hibernate.dialect.Oracle10gDialect" />
 
-      <!-- 옵션 속성 -->
-      <property name="hibernare.show_sql" value="true" />
-      <property name="hibernate.format_sql" value="true" />
-      <property name="hibernate.use_sql_comments" value="true" />
-      <property name="hibernate.id.new_generater_mappings" value="true" />
-      <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create update create-drop -->
-   </properties>
+		<properties>
+			<!-- 필수 속성 -->
+			<property name="javax.persistence.jdbc.driver"
+				value="oracle.jdbc.driver.OracleDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@localhost:1521:xe" />
+			<property name="javax.persistence.jdbc.user" value="bang" />
+			<property name="javax.persistence.jdbc.password"
+				value="1234" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.Oracle10gDialect" />
+
+			<!-- 옵션 속성 -->
+			<property name="hibernare.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="true" />
+			<property name="hibernate.id.new_generater_mappings"
+				value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create update create-drop -->
+		</properties>
+	</persistence-unit>
 </persistence>
