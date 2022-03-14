@@ -10,7 +10,6 @@ import com.test.app.board.BoardVO;
 
 // 1. 상속
 // 2. @
-@Repository("boardDAO")
 public class BoardDAO3 {
 
 	@Autowired

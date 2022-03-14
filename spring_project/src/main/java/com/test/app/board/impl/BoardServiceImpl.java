@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.test.app.board.BoardService;
 import com.test.app.board.BoardVO;
@@ -12,17 +13,20 @@ import com.test.app.board.BoardVO;
 public class BoardServiceImpl implements BoardService{
 	
 	@Autowired
-	private BoardDAO3 boardDAO;
-		
+	private BoardDAO4 boardDAO;
+	
+	
 	@Override
 	public void insertBoard(BoardVO vo) {
 		boardDAO.insertBoard(vo);
 	}
-
+	
+	
 	@Override
 	public void updateBoard(BoardVO vo) {
 		boardDAO.updateBoard(vo);
 	}
+	
 
 	@Override
 	public void deleteBoard(BoardVO vo) {

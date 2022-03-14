@@ -1,20 +1,36 @@
 package com.test.app.board;
 
-import java.sql.Date;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 import org.springframework.web.multipart.MultipartFile;
 
+@Entity
+@Table(name="BOARD2")
 public class BoardVO {
+	@Id
+	@GeneratedValue
 	private int bid;
 	private String title;
 	private String writer;
 	private String content;
-	private Date bdate;
+	@Temporal(TemporalType.DATE)
+	private Date bdate=new Date();
 	private int cnt;
 	
+	@Transient
 	private String searchCondition;
+	@Transient
 	private String searchContent;
 	
+	@Transient
 	private MultipartFile file;
 	private String filepath;
 	
