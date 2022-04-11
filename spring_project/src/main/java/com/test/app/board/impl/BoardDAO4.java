@@ -12,7 +12,7 @@ import com.test.app.board.BoardVO;
 @Repository("boardDAO")
 public class BoardDAO4 {
 
-	@PersistenceContext              //autowired랑 같지만 persistence.xml도 봐야하기때문에.   em객체를 주입받아서("DI") 아래의 CRUD 메서드를 사용할수있게된다!
+   @PersistenceContext              //autowired랑 같지만 persistence.xml도 봐야하기때문에.   em객체를 주입받아서("DI") 아래의 CRUD 메서드를 사용할수있게된다!
    private EntityManager em;
    
    public void insertBoard(BoardVO vo) {
