@@ -72,5 +72,4 @@ class BoardRowMapper implements RowMapper<BoardVO>{
 	}
 	
 	
-
 }
